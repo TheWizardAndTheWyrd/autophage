@@ -166,3 +166,78 @@
 2014-05-28 17:12:27.722 [info] <0.1730.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  autophage_view_lib_tags
 2014-05-28 17:12:27.738 [notice] <0.1730.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/priv/init/autophage_01_news.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
 2014-05-28 17:12:27.745 [notice] <0.1730.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/priv/init/autophage_10_bcrypt.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-28 17:16:24.051 [notice] <0.62.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2014-05-28 17:16:24.106 [info] <0.7.0> Application lager started on node leader@localhost
+2014-05-28 17:16:24.130 [info] <0.7.0> Application crypto started on node leader@localhost
+2014-05-28 17:16:24.161 [info] <0.7.0> Application mimetypes started on node leader@localhost
+2014-05-28 17:16:24.235 [info] <0.94.0> Starting Boss in development mode....
+
+2014-05-28 17:16:24.260 [info] <0.94.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mnesia options [{adapter,mnesia},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2014-05-28 17:16:24.534 [info] <0.7.0> Application mnesia started on node leader@localhost
+2014-05-28 17:16:24.626 [info] <0.94.0> Starting master services on leader@localhost
+
+2014-05-28 17:16:24.657 [info] <0.7.0> Application tinymq started on node leader@localhost
+2014-05-28 17:16:24.783 [info] <0.94.0> SSL:[]
+
+2014-05-28 17:16:24.792 [info] <0.94.0> Starting cowboy... on leader@localhost
+
+2014-05-28 17:16:24.802 [info] <0.7.0> Application cowlib started on node leader@localhost
+2014-05-28 17:16:24.816 [info] <0.7.0> Application ranch started on node leader@localhost
+2014-05-28 17:16:24.850 [info] <0.7.0> Application cowboy started on node leader@localhost
+2014-05-28 17:16:24.850 [info] <0.94.0> Starting http listener... on 0.0.0.0:8001 
+
+2014-05-28 17:16:25.013 [warning] <0.6.0> lager_error_logger_h dropped 45 messages in the last second that exceeded the limit of 50 messages/sec
+2014-05-28 17:16:25.021 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "./deps/cb_admin/priv/init/cb_admin_01_news.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-28 17:16:25.111 [info] <0.282.0> Loading routes from "/Users/ramonlong/src/autophage/priv/autophage.routes" ....
+2014-05-28 17:16:25.112 [info] <0.94.0>@boss_load:load_all_modules:57 Loading application autophage
+2014-05-28 17:16:25.152 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/mail/autophage_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-28 17:16:25.178 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/mail/autophage_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-28 17:16:25.204 [info] <0.94.0>@boss_controller_compiler:compile:59 Compile controller /Users/ramonlong/src/autophage/src/controller/autophage_feed_controller.erl
+2014-05-28 17:16:25.204 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/controller/autophage_feed_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-28 17:16:25.253 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/model/autophage_feedevent.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-28 17:16:25.253 [info] <0.94.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},autophage_feedevent},{',',{1,28}},{'[',{1,30}},{var,{1,31},'Id'},{',',{1,33}},{var,{1,35},'User'},{',',{1,39}},{var,{1,41},'Action'},{',',{1,47}},{var,{1,49},'Glue'},{',',{1,53}},{var,{1,55},'Status'},{']',{1,61}},{')',{1,62}},{dot,{1,63}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{3,1}}]
+2014-05-28 17:16:25.254 [notice] <0.94.0>@boss_record_compiler:make_generated_forms:225 Module "autophage_feedevent" Parameters ['Id','User','Action','Glue','Status'] Attributes[{compile,export_all}]
+2014-05-28 17:16:25.330 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/view/lib/tag_modules/autophage_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-28 17:16:25.351 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/view/lib/filter_modules/autophage_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-28 17:16:25.355 [info] <0.94.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  autophage_view_lib_tags
+2014-05-28 17:16:25.669 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/priv/init/autophage_01_news.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-28 17:16:25.673 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/priv/init/autophage_10_bcrypt.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-28 17:16:25.754 [info] <0.7.0> Application bcrypt started on node leader@localhost
+2014-05-28 17:16:25.755 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/priv/init/autophage_util.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-28 17:16:44.667 [notice] <0.336.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:16:44.678 [info] <0.276.0>@boss_router_controller:route:171 Boss Route cb_admin "admin" "index" []
+2014-05-28 17:16:44.779 [notice] <0.336.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-28 17:16:44.779 [notice] <0.336.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-28 17:16:44.853 [info] <0.336.0> GET /admin [cb_admin] 200 0ms
+2014-05-28 17:16:44.906 [notice] <0.337.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:16:44.907 [info] <0.276.0>@boss_router_controller:route:171 Boss Route cb_admin "admin" "index" []
+2014-05-28 17:16:44.909 [notice] <0.337.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-28 17:16:44.909 [notice] <0.337.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-28 17:16:44.916 [info] <0.337.0> GET /admin [cb_admin] 200 0ms
+2014-05-28 17:16:47.671 [notice] <0.338.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:16:47.674 [notice] <0.338.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-28 17:16:47.674 [notice] <0.338.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-28 17:16:47.692 [info] <0.338.0> GET /admin/model/model [cb_admin] 200 0ms
+2014-05-28 17:17:06.433 [notice] <0.341.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:17:06.439 [notice] <0.341.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-28 17:17:06.439 [notice] <0.341.0>@boss_controller_adapter_pmod:action:92 Tokens ["autophage_feedevent"]
+2014-05-28 17:17:06.450 [info] <0.341.0> GET /admin/model/model/autophage_feedevent [cb_admin] 200 0ms
+2014-05-28 17:21:03.350 [notice] <0.351.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:21:03.353 [notice] <0.351.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-28 17:21:03.353 [notice] <0.351.0>@boss_controller_adapter_pmod:action:92 Tokens ["autophage_feedevent"]
+2014-05-28 17:21:03.367 [info] <0.351.0> GET /admin/model/create/autophage_feedevent [cb_admin] 200 0ms
+2014-05-28 17:21:36.113 [notice] <0.352.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:21:36.140 [notice] <0.352.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-05-28 17:21:36.140 [notice] <0.352.0>@boss_controller_adapter_pmod:action:92 Tokens ["autophage_feedevent"]
+2014-05-28 17:21:36.155 [info] <0.352.0> POST /admin/model/create/autophage_feedevent [cb_admin] 302 0ms
+2014-05-28 17:21:36.160 [notice] <0.353.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:21:36.162 [notice] <0.353.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-28 17:21:36.162 [notice] <0.353.0>@boss_controller_adapter_pmod:action:92 Tokens ["autophage_feedevent-1"]
+2014-05-28 17:21:36.224 [info] <0.353.0> GET /admin/model/show/autophage_feedevent-1 [cb_admin] 200 0ms
+2014-05-28 17:21:36.430 [notice] <0.355.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:21:36.433 [notice] <0.355.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-05-28 17:21:36.433 [notice] <0.355.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-28 17:21:36.451 [info] <0.355.0> POST /admin/model/watch [cb_admin] 200 0ms
+2014-05-28 17:21:36.637 [notice] <0.356.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-28 17:21:36.641 [notice] <0.356.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-28 17:21:36.641 [notice] <0.356.0>@boss_controller_adapter_pmod:action:92 Tokens ["1401312096163607"]
