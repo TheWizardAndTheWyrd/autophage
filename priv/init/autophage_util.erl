@@ -1,6 +1,6 @@
--module (my_application_util).
+-module (autophage_util).
 -compile (export_all).
--define (APPNAME, my_application). % is it possible to get it automatically somewhere in CB?
+-define (APPNAME, autophage). % is it possible to get it automatically somewhere in CB?
 
 init() ->
   init_db (),
