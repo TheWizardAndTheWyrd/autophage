@@ -1,4 +1,2 @@
--module(autophage_fetishlist, [Id, Fetishes, AutophageUserId]).
+-module(autophage_feedevent, [Id, User, Action, Glue, Status]).
 -compile(export_all).
-
--belongs_to(autophage_user).

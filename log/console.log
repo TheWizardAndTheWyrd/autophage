@@ -3300,3 +3300,111 @@
 2014-05-29 01:23:09.315 [notice] <0.362.0>@boss_controller_adapter_pmod:action:92 Tokens []
 2014-05-29 01:23:09.316 [error] <0.362.0>@boss_web_controller:call_controller_action:366 Error in controller error badarg [{erlang,binary_to_list,["$2a$12$hjWUQ7dSM/VHGnzyOcbNUemLr/MDVV/p3moHCVmI0HsCTFUyaROLK"],[]},{autophage_user,check_password,2,[{file,"/Users/ramonlong/src/autophage/src/model/autophage_user.erl"},{line,11}]},{autophage_user_controller,login,3,[{file,"/Users/ramonlong/src/autophage/src/controller/autophage_user_controller.erl"},{line,11}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,363}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,355}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,334}]},{boss_web_controller_handle_request,process_dynamic_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,242}]},{boss_web_controller_handle_request,process_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,228}]}]
 2014-05-29 01:23:09.318 [info] <0.362.0> POST /user/login [autophage] 200 0ms
+2014-05-29 01:56:34.479 [notice] <0.62.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2014-05-29 01:56:34.626 [info] <0.7.0> Application lager started on node autophage@localhost
+2014-05-29 01:56:34.644 [info] <0.7.0> Application crypto started on node autophage@localhost
+2014-05-29 01:56:34.674 [info] <0.7.0> Application mimetypes started on node autophage@localhost
+2014-05-29 01:56:34.770 [info] <0.94.0> Starting Boss in development mode....
+
+2014-05-29 01:56:34.793 [info] <0.94.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mnesia options [{adapter,mnesia},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2014-05-29 01:56:35.268 [info] <0.7.0> Application mnesia started on node autophage@localhost
+2014-05-29 01:56:35.550 [info] <0.94.0> Starting master services on autophage@localhost
+
+2014-05-29 01:56:35.618 [info] <0.7.0> Application tinymq started on node autophage@localhost
+2014-05-29 01:56:35.907 [info] <0.94.0> SSL:[]
+
+2014-05-29 01:56:35.914 [info] <0.94.0> Starting cowboy... on autophage@localhost
+
+2014-05-29 01:56:35.923 [info] <0.7.0> Application cowlib started on node autophage@localhost
+2014-05-29 01:56:35.934 [info] <0.7.0> Application ranch started on node autophage@localhost
+2014-05-29 01:56:35.967 [info] <0.7.0> Application cowboy started on node autophage@localhost
+2014-05-29 01:56:35.967 [info] <0.94.0> Starting http listener... on 0.0.0.0:8001 
+
+2014-05-29 01:56:36.000 [warning] <0.6.0> lager_error_logger_h dropped 48 messages in the last second that exceeded the limit of 50 messages/sec
+2014-05-29 01:56:36.011 [info] <0.7.0> Application boss started on node autophage@localhost
+2014-05-29 01:56:36.011 [info] <0.7.0> Application cb_admin started on node autophage@localhost
+2014-05-29 01:56:36.090 [info] <0.314.0> Loading routes from "./deps/cb_admin/priv/cb_admin.routes" ....
+2014-05-29 01:56:36.131 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "./deps/cb_admin/priv/init/cb_admin_01_news.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-29 01:56:36.308 [info] <0.320.0> Loading routes from "/Users/ramonlong/src/autophage/priv/autophage.routes" ....
+2014-05-29 01:56:36.311 [info] <0.94.0>@boss_load:load_all_modules:57 Loading application autophage
+2014-05-29 01:56:36.344 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/lib/user_lib.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.399 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/mail/autophage_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.420 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/mail/autophage_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.456 [info] <0.94.0>@boss_controller_compiler:compile:59 Compile controller /Users/ramonlong/src/autophage/src/controller/autophage_feed_controller.erl
+2014-05-29 01:56:36.456 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/controller/autophage_feed_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.481 [info] <0.94.0>@boss_controller_compiler:compile:59 Compile controller /Users/ramonlong/src/autophage/src/controller/autophage_user_controller.erl
+2014-05-29 01:56:36.481 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/controller/autophage_user_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.548 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/model/autophage_user.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.551 [info] <0.94.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},autophage_user},{',',{1,23}},{'[',{1,25}},{var,{1,26},'Id'},{',',{1,28}},{var,{1,30},'Email'},{',',{1,35}},{var,{1,37},'Username'},{',',{1,45}},{var,{1,47},'Password'},{']',{1,55}},{')',{1,56}},{dot,{1,57}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{'-',{4,1}},{atom,{4,2},define},{'(',{4,8}},{var,{4,9},'SETEC_ASTRONOMY'},{',',{4,24}},{string,{4,26},"6664e2e1dae84fb4a6213b0f467d8134"},{')',{4,60}},{dot,{4,61}},{atom,{6,1},session_identifier},{'(',{6,19}},{')',{6,20}},{'->',{6,22}},{atom,{7,3},mochihex},{':',{7,11}},{atom,{7,12},to_hex},{'(',{7,18}},{atom,{7,19},erlang},{':',{7,25}},{atom,{7,26},md5},{'(',{7,29}},{'?',{7,30}},{var,{7,31},'SETEC_ASTRONOMY'},{'++',{7,47}},{var,{7,50},'Id'},{')',{7,52}},{')',{7,53}},{dot,{7,54}},{atom,{9,1},check_password},{'(',{9,15}},{var,{9,16},'PasswordAttempt'},{')',{9,31}},{'->',{9,33}},{var,{11,3},'StoredPassword'},{'=',{11,18}},{atom,{11,20},erlang},{':',{11,26}},{atom,{11,27},binary_to_list},{'(',{11,41}},{var,{11,42},'Password'},{')',{11,50}},{',',{11,51}},{atom,{12,3},user_lib},{':',{12,11}},{atom,{12,12},compare_password},{'(',{12,28}},{var,{12,29},'PasswordAttempt'},{',',{12,44}},{var,{12,46},'StoredPassword'},{')',{12,60}},{dot,{12,61}},{atom,{14,1},login_cookies},{'(',{14,14}},{')',{14,15}},{'->',{14,17}},{'[',{15,3}},{atom,{16,5},mochiweb_cookies},{':',{16,21}},{atom,{16,22},cookie},{'(',{16,28}},{string,{16,29},"autophage_user_id"},{',',{16,48}},{var,{16,50},'Id'},{',',{16,52}},{'[',{16,54}},{'{',{16,55}},{atom,{16,56},path},{',',{16,60}},{string,{16,62},"/"},{'}',{16,65}},{']',{16,66}},{')',{16,67}},{',',{16,68}},{atom,{17,5},mochiweb_cookies},{':',{17,21}},{atom,{17,22},cookie},{'(',{17,28}},{string,{17,29},"session_id"},{',',{17,41}},{atom,{17,43},session_identifier},{'(',{17,61}},{')',{17,62}},{',',{17,63}},{'[',{17,65}},{'{',{17,66}},{atom,{17,67},path},{',',{17,71}},{string,{17,73},"/"},{'}',{17,76}},{']',{17,77}},{')',{17,78}},{']',{18,3}},{dot,{18,4}},{eof,{19,1}}]
+2014-05-29 01:56:36.553 [notice] <0.94.0>@boss_record_compiler:make_generated_forms:225 Module "autophage_user" Parameters ['Id','Email','Username','Password'] Attributes[{compile,export_all}]
+2014-05-29 01:56:36.621 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/model/autophage_feedevent.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.622 [info] <0.94.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},autophage_fetishlist},{',',{1,29}},{'[',{1,31}},{var,{1,32},'Id'},{',',{1,34}},{var,{1,36},'Fetishes'},{',',{1,44}},{var,{1,46},'AutophageUserId'},{']',{1,61}},{')',{1,62}},{dot,{1,63}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{'-',{4,1}},{atom,{4,2},belongs_to},{'(',{4,12}},{atom,{4,13},autophage_user},{')',{4,27}},{dot,{4,28}},{eof,{5,1}}]
+2014-05-29 01:56:36.623 [notice] <0.94.0>@boss_record_compiler:make_generated_forms:225 Module "autophage_fetishlist" Parameters ['Id','Fetishes','AutophageUserId'] Attributes[{belongs_to,autophage_user},{compile,export_all}]
+2014-05-29 01:56:36.676 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/view/lib/tag_modules/autophage_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.702 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/view/lib/filter_modules/autophage_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:56:36.706 [info] <0.94.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  autophage_view_lib_tags
+2014-05-29 01:56:37.258 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/priv/init/autophage_01_news.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-29 01:56:37.267 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/priv/init/autophage_10_bcrypt.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-29 01:56:37.386 [info] <0.7.0> Application bcrypt started on node autophage@localhost
+2014-05-29 01:56:37.387 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/priv/init/autophage_util.erl" with options [{include_dirs,["/Users/ramonlong/src/autophage/include"]}] 
+2014-05-29 01:56:55.618 [notice] <0.350.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:56:55.625 [info] <0.314.0>@boss_router_controller:route:171 Boss Route cb_admin "admin" "index" []
+2014-05-29 01:56:55.719 [notice] <0.351.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:56:55.732 [info] <0.314.0>@boss_router_controller:route:171 Boss Route cb_admin "admin" "index" []
+2014-05-29 01:56:55.771 [notice] <0.350.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:56:55.771 [notice] <0.350.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-29 01:56:55.771 [notice] <0.351.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:56:55.771 [notice] <0.351.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-29 01:56:55.863 [info] <0.350.0> GET /admin [cb_admin] 200 0ms
+2014-05-29 01:56:55.863 [info] <0.351.0> GET /admin [cb_admin] 200 0ms
+2014-05-29 01:56:55.874 [error] <0.350.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:normal. Stacktrace: [{mochicow_request,send,2,[{file,"src/mochicow_request.erl"},{line,156}]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,406}]},{boss_web_controller_handle_request,handle_request,3,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-05-29 01:56:57.653 [notice] <0.352.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:56:57.656 [notice] <0.352.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:56:57.656 [notice] <0.352.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-29 01:56:57.673 [info] <0.352.0> GET /admin/model/model [cb_admin] 200 0ms
+2014-05-29 01:57:01.393 [notice] <0.353.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:01.399 [notice] <0.353.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:57:01.399 [notice] <0.353.0>@boss_controller_adapter_pmod:action:92 Tokens ["autophage_user"]
+2014-05-29 01:57:01.418 [info] <0.353.0> GET /admin/model/model/autophage_user [cb_admin] 200 0ms
+2014-05-29 01:57:01.535 [notice] <0.355.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:01.538 [notice] <0.355.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-05-29 01:57:01.538 [notice] <0.355.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-29 01:57:01.584 [info] <0.355.0> POST /admin/model/watch [cb_admin] 200 0ms
+2014-05-29 01:57:01.692 [notice] <0.356.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:01.695 [notice] <0.356.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:57:01.695 [notice] <0.356.0>@boss_controller_adapter_pmod:action:92 Tokens ["1401343021414141"]
+2014-05-29 01:57:05.788 [notice] <0.357.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:05.790 [notice] <0.357.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:57:05.790 [notice] <0.357.0>@boss_controller_adapter_pmod:action:92 Tokens ["autophage_user-1"]
+2014-05-29 01:57:05.809 [info] <0.357.0> GET /admin/model/show/autophage_user-1 [cb_admin] 200 0ms
+2014-05-29 01:57:05.954 [notice] <0.358.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:05.961 [notice] <0.358.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-05-29 01:57:05.961 [notice] <0.358.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-29 01:57:05.967 [info] <0.358.0> POST /admin/model/watch [cb_admin] 200 0ms
+2014-05-29 01:57:06.077 [notice] <0.359.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:06.080 [notice] <0.359.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:57:06.080 [notice] <0.359.0>@boss_controller_adapter_pmod:action:92 Tokens ["1401343025791651"]
+2014-05-29 01:57:08.551 [notice] <0.360.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:08.554 [notice] <0.360.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-05-29 01:57:08.554 [notice] <0.360.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-29 01:57:08.558 [info] <0.360.0> POST /admin/model/watch [cb_admin] 200 0ms
+2014-05-29 01:57:08.679 [notice] <0.361.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:08.682 [notice] <0.361.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:57:08.682 [notice] <0.361.0>@boss_controller_adapter_pmod:action:92 Tokens ["1401343021414141"]
+2014-05-29 01:57:09.721 [notice] <0.362.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath autophage
+2014-05-29 01:57:09.750 [notice] <0.362.0>@boss_compiler:compile:47 Compile file "/Users/ramonlong/src/autophage/src/model/autophage_feedevent.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/ramonlong/src/autophage/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-05-29 01:57:09.751 [info] <0.362.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},autophage_fetishlist},{',',{1,29}},{'[',{1,31}},{var,{1,32},'Id'},{',',{1,34}},{var,{1,36},'Fetishes'},{',',{1,44}},{var,{1,46},'AutophageUserId'},{']',{1,61}},{')',{1,62}},{dot,{1,63}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{'-',{4,1}},{atom,{4,2},belongs_to},{'(',{4,12}},{atom,{4,13},autophage_user},{')',{4,27}},{dot,{4,28}},{eof,{5,1}}]
+2014-05-29 01:57:09.752 [notice] <0.362.0>@boss_record_compiler:make_generated_forms:225 Module "autophage_fetishlist" Parameters ['Id','Fetishes','AutophageUserId'] Attributes[{belongs_to,autophage_user},{compile,export_all}]
+2014-05-29 01:57:09.787 [info] <0.362.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},autophage_user},{',',{1,23}},{'[',{1,25}},{var,{1,26},'Id'},{',',{1,28}},{var,{1,30},'Email'},{',',{1,35}},{var,{1,37},'Username'},{',',{1,45}},{var,{1,47},'Password'},{']',{1,55}},{')',{1,56}},{dot,{1,57}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{'-',{4,1}},{atom,{4,2},define},{'(',{4,8}},{var,{4,9},'SETEC_ASTRONOMY'},{',',{4,24}},{string,{4,26},"6664e2e1dae84fb4a6213b0f467d8134"},{')',{4,60}},{dot,{4,61}},{atom,{6,1},session_identifier},{'(',{6,19}},{')',{6,20}},{'->',{6,22}},{atom,{7,3},mochihex},{':',{7,11}},{atom,{7,12},to_hex},{'(',{7,18}},{atom,{7,19},erlang},{':',{7,25}},{atom,{7,26},md5},{'(',{7,29}},{'?',{7,30}},{var,{7,31},'SETEC_ASTRONOMY'},{'++',{7,47}},{var,{7,50},'Id'},{')',{7,52}},{')',{7,53}},{dot,{7,54}},{atom,{9,1},check_password},{'(',{9,15}},{var,{9,16},'PasswordAttempt'},{')',{9,31}},{'->',{9,33}},{var,{11,3},'StoredPassword'},{'=',{11,18}},{atom,{11,20},erlang},{':',{11,26}},{atom,{11,27},binary_to_list},{'(',{11,41}},{var,{11,42},'Password'},{')',{11,50}},{',',{11,51}},{atom,{12,3},user_lib},{':',{12,11}},{atom,{12,12},compare_password},{'(',{12,28}},{var,{12,29},'PasswordAttempt'},{',',{12,44}},{var,{12,46},'StoredPassword'},{')',{12,60}},{dot,{12,61}},{atom,{14,1},login_cookies},{'(',{14,14}},{')',{14,15}},{'->',{14,17}},{'[',{15,3}},{atom,{16,5},mochiweb_cookies},{':',{16,21}},{atom,{16,22},cookie},{'(',{16,28}},{string,{16,29},"autophage_user_id"},{',',{16,48}},{var,{16,50},'Id'},{',',{16,52}},{'[',{16,54}},{'{',{16,55}},{atom,{16,56},path},{',',{16,60}},{string,{16,62},"/"},{'}',{16,65}},{']',{16,66}},{')',{16,67}},{',',{16,68}},{atom,{17,5},mochiweb_cookies},{':',{17,21}},{atom,{17,22},cookie},{'(',{17,28}},{string,{17,29},"session_id"},{',',{17,41}},{atom,{17,43},session_identifier},{'(',{17,61}},{')',{17,62}},{',',{17,63}},{'[',{17,65}},{'{',{17,66}},{atom,{17,67},path},{',',{17,71}},{string,{17,73},"/"},{'}',{17,76}},{']',{17,77}},{')',{17,78}},{']',{18,3}},{dot,{18,4}},{eof,{19,1}}]
+2014-05-29 01:57:09.788 [notice] <0.362.0>@boss_record_compiler:make_generated_forms:225 Module "autophage_user" Parameters ['Id','Email','Username','Password'] Attributes[{compile,export_all}]
+2014-05-29 01:57:10.103 [info] <0.362.0> GET /doc/autophage_user [autophage] 200 0ms
+2014-05-29 01:57:30.538 [notice] <0.369.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:30.540 [notice] <0.369.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-05-29 01:57:30.540 [notice] <0.369.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-05-29 01:57:30.543 [info] <0.369.0> POST /admin/model/watch [cb_admin] 200 0ms
+2014-05-29 01:57:30.642 [notice] <0.370.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath cb_admin
+2014-05-29 01:57:30.644 [notice] <0.370.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-05-29 01:57:30.644 [notice] <0.370.0>@boss_controller_adapter_pmod:action:92 Tokens ["1401343021414141"]
+2014-05-29 01:57:31.698 [info] <0.356.0> GET /admin/model/events/1401343021414141 [cb_admin] 200 0ms
+2014-05-29 01:57:36.083 [info] <0.359.0> GET /admin/model/events/1401343025791651 [cb_admin] 200 0ms
+2014-05-29 01:57:38.684 [info] <0.361.0> GET /admin/model/events/1401343021414141 [cb_admin] 200 0ms
